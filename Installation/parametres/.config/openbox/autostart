@@ -1,0 +1,14 @@
+sleep 5s && kalu &
+nitrogen --restore &
+volumeicon &
+compton --config ~/.config/compton.conf -b &
+tint2 &
+plank &
+lxpolkit &
+pytyle --restore &
+syncthing --no-browser &
+tilda &
+xinput set-prop 12 283 1 &
+sleep 5s && gradio &
+sleep 2s && devilspie &
+sleep s && bleachbit -c --preset &

@@ -1,0 +1,23 @@
+#!/bin/bash
+set -e
+
+
+#Themes perso en noir et blanc *voir neofetch
+
+yay --noconfirm --needed -S equilux-theme
+echo
+echo 'Equilux installé'
+echo
+yay --noconfirm --needed -S gtk-theme-shades-of-gray
+echo
+echo 'Shades of grey installé'
+echo
+yay --noconfirm --needed -S sardi-ghost-flexible-colora-variations-icons-git 
+echo 
+echo 'Sardi ghost icon installé '
+echo
+yay --noconfirm --needed -S breeze-cursors-lh
+echo
+echo 'Curseur Breeze installé'
+echo
+

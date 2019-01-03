@@ -1,0 +1,18 @@
+#!/bin/bash
+
+sudo pacman -S --noconfirm --needed pulseaudio-alsa pulseaudio-bluetooth bluez bluez-libs bluez-utils 
+bluez-firmware$
+
+sudo systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
+sudo systemctl daemon-reload
+
+echo "################################################################"
+echo "####       reboot and connect your bluetooth device         ####"
+echo "################################################################"
+
+
+sudo pacman -S --needed --noconfirm pulseaudio-equalizer
+
+echo " Pour tint2, gauche = pavucontrol, droit = qpaeq, millieu = gradio, bas = amixer -D pulse sset Master 
+5%+, haut = amixer -D pulse sset Master 5%-"

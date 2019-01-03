@@ -1,0 +1,3 @@
+gtk-xft-hinting = 1
+gtk-xft-hintstyle = hintfull
+gtk-xft-rgba = rgb

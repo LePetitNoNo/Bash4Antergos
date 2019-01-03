@@ -1,0 +1,57 @@
+#!/bin/bash
+set -e
+
+
+sudo pacman -S --noconfirm audacity
+sudo pacman -S --noconfirm bleachbit
+sudo pacman -S --noconfirm blender 
+sudo pacman -S --noconfirm catfish 
+sudo pacman -S --noconfirm clementine
+sudo pacman -S --noconfirm conky
+sudo pacman -S --noconfirm cpupower
+sudo pacman -S --noconfirm curl
+sudo pacman -S --noconfirm darktable 
+sudo pacman -S --noconfirm dconf-editor 
+sudo pacman -S --noconfirm devilspie
+sudo pacman -S --noconfirm etcher
+sudo pacman -S --noconfirm filezilla
+sudo pacman -S --noconfirm firefox
+sudo pacman -S --noconfirm gimp 
+sudo pacman -S --noconfirm git  
+sudo pacman -S --noconfirm gnome-disk-utility   
+sudo pacman -S --noconfirm gparted
+sudo pacman -S --noconfirm gpick
+sudo pacman -S --noconfirm gitkraken
+sudo pacman -S --noconfirm grsync
+sudo pacman -S --noconfirm hardinfo
+sudo pacman -S --noconfirm hddtemp 
+sudo pacman -S --noconfirm htop  
+sudo pacman -S --noconfirm inkscape 
+sudo pacman -S --noconfirm lm_sensors
+sudo pacman -S --noconfirm kdenlive
+sudo pacman -S --noconfirm keepass
+sudo pacman -S --noconfirm krita
+sudo pacman -S --noconfirm neofetch 
+sudo pacman -S --noconfirm obs-studio
+sudo pacman -S --noconfirm plank 
+sudo pacman -S --noconfirm yay
+sudo pacman -S --noconfirm redshift  
+sudo pacman -S --noconfirm syncthing 
+sudo pacman -S --noconfirm simplescreenrecorder 
+sudo pacman -S --noconfirm transmission-cli
+sudo pacman -S --noconfirm transmission-gtk   
+sudo pacman -S --noconfirm wine  
+sudo pacman -S --noconfirm youtube-dl    
+sudo pacman -S --noconfirm variety   
+sudo pacman -S --noconfirm veracrypt
+sudo pacman -S --noconfirm vlc
+sudo pacman -S --noconfirm virtualbox 
+sudo pacman -S --noconfirm wget              
+
+
+
+
+echo "################################################################"
+echo "###################    Logiciels de base installés  ############"
+echo "################################################################"
+

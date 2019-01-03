@@ -1,0 +1,8 @@
+#!/bin/sh
+
+while true
+do
+echo "Recherche : "
+read Something
+find / -iname "$Something*" -print 2>/dev/null
+done

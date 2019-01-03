@@ -1,0 +1,21 @@
+#!/bin/bash
+set -e
+
+
+yay -S --noconfirm --needed python2-pytyle1-git
+yay -S --noconfirm --needed protonvpn-cli
+yay -S --noconfirm --needed peerflix
+yay -S --noconfirm --needed tkpacman
+yay -S --noconfirm --needed gradio
+yay -S --noconfirm --needed caffeine-ng
+yay -S --noconfirm --needed discord
+yay -S --noconfirm --needed tor-browser
+yay -S --noconfirm --needed downgrade
+yay -s --noconfirm --needed links
+
+
+echo "################################################################"
+echo "###################    Logiciels AUR  installés  ############"
+echo "################################################################"
+
+

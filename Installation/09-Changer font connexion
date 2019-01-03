@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+cd /etc/ && sudo sed -i 's/oxygen/foom/g' oblogout.conf
+

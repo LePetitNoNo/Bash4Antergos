@@ -1,0 +1,37 @@
+#!/bin/bash
+
+ echo "This scripts will clean your system!"
+bleachbit -c --preset
+cd /var/log
+if [ -e mpd ]
+then
+cd $HOME
+sudo rm -rf /var/log/*
+#Deprecated remove dir method.
+#sudo rm -rf /var/log/
+#sudo mkdir /var/log
+cd /var/log
+sudo mkdir mpd
+cd /var/log/mpd
+sudo touch mpd.log
+echo "Cleaning Pacman Cache"
+sudo pacman -Scc
+cd $HOME
+touch delete.log
+sudo pacman -Qdt >> delete.log
+#That method will skip depency checks. 
+#sudo pacman -Rdns |$( cat delete.log)
+sudo pacman -Rns | $(cat delete.log)
+else
+cd $HOME
+sudo rm -rf /var/log/*
+#Deprecated remove dir method.
+#sudo rm -rf /var/log/
+#sudo mkdir /var/log
+echo "Cleaning Pacman Cache"
+sudo pacman -Scc
+cd $HOME
+touch delete.log
+sudo pacman -Qdt >> delete.log
+sudo pacman -Rns | $(cat delete.log)
+fi

@@ -1,0 +1,16 @@
+#!/bin/bash
+set -e
+
+echo "################################################################"
+echo "####             Serveurs Antergos + rapides                 ###"
+echo "################################################################"
+
+sudo rankmirrors -n 0 /etc/pacman.d/antergos-mirrorlist > /tmp/antergos-mirrorlist && sudo cp /tmp/antergos-mirrorlist /etc/pacman.d
+
+
+echo "################################################################"
+echo "##########       Sauvegarde                            #########"
+echo "################################################################"
+
+cat /etc/pacman.d/antergos-mirrorlist
+

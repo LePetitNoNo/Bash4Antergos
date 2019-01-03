@@ -1,0 +1,14 @@
+cvlc --fullscreen --play-and-exit Retro.mp4 &
+sleep 5s && kalu &
+nitrogen --restore &
+volumeicon &
+compton --config ~/.config/compton.conf -b &
+tint2 &
+plank &
+lxpolkit &
+pytyle &
+syncthing --no-browser &
+xinput set-prop 12 289 1 &
+sleep 5s && gradio &
+sleep 2s && devilspie &
+sleep s && bleachbit -c --preset &

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+yay --noconfirm --needed -S nvidia-installer
+
+nvidia-installer
+
+yay --noconfirm --needed - S nvidia-settings
+
+sudo nvidia-settings

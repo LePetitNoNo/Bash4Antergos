@@ -1,0 +1,10 @@
+( if 
+( begin 
+( is ( application_name ) "Gradio" )
+( is ( window_name ) "Gradio" )
+) 
+( begin 
+( minimize )
+( println "match" )
+)
+)

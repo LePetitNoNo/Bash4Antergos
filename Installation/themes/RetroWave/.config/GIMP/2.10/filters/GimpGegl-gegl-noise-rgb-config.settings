@@ -1,0 +1,15 @@
+# settings
+
+(GimpGegl-gegl-noise-rgb-config "2018-12-31 17:05:45"
+    (time 1546272345)
+    (correlated yes)
+    (independent no)
+    (linear no)
+    (gaussian no)
+    (red 0.200000)
+    (green 0.200000)
+    (blue 0.200000)
+    (alpha 0.000000)
+    (seed 0))
+
+# end of settings

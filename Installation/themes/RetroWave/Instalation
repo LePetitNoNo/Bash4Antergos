@@ -1,0 +1,14 @@
+#!/bin/bash
+
+sudo cp -r 'usr' /
+cp -r '.config' '/home/$USER/'
+cp -r '.themes' '/home/$USER/'
+cp -r 'retrowave' '/home/$USER/Images/'
+cp -r '.font' '/home/$USER/'
+cp -r '.icons' '/home/$USER/'
+cp -r '.gtkrc-2.0' '/home/$USER/'
+cp -r '.gtkrc-2.0.mine' '/home/$USER/'
+sudo cp -r 'Antergos-Default' '/boot/grub/themes/'
+sudo cp 'BR2049-Wallpaper-Joi.png' /
+7z e Retro.mp4.7z.001
+cp 'Retro.mp4' '/home/$USER/'

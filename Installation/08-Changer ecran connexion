@@ -1,0 +1,16 @@
+#!/bin/bash
+
+
+#install lightdm
+sudo pacman --noconfirm --needed -S lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings accountsservice numlockx
+
+
+#modifie les parametres pour mettre en place lightdm
+#changer le parametre commencant par greeter-session= et changer en greeter-session=lightdm-gtk-greeter'
+cd /etc/lightdm/ && sudo sed -i 's/lightdm-webkit2-greeter/lightdm-gtk-greeter/g' lightdm.conf
+
+
+#active lightdm
+sudo systemctl enable -f lightdm
+
+les images doivent etre dans un fichier systeme ex "/usr/share/antergos/wallpappers/"' 

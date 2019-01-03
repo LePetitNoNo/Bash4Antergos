@@ -1,0 +1,32 @@
+#!/bin/bash
+set -e
+
+echo "################################################################"
+echo "####             Installation reflector                        ###"
+echo "################################################################"
+
+
+# installation de refector pour tester rapiditée des mirroires
+sudo pacman -S --noconfirm --needed reflector
+
+
+echo "################################################################"
+echo "####   Trouver les mirroires + rapides                       ###"
+echo "################################################################"
+
+
+sudo reflector -l 100 -f 50 --sort rate --threads 5 --verbose --save /tmp/mirrorlist.new && rankmirrors -n 0 /tmp/mirrorlist.new > /tmp/mirrorlist && sudo cp /tmp/mirrorlist /etc/pacman.d
+
+
+echo "################################################################"
+echo "####       Sauvegarde des serveurs                           ###"
+echo "################################################################"
+
+
+cat /etc/pacman.d/mirrorlist
+
+
+echo "################################################################"
+echo "#####         Done                                          ####"
+echo "################################################################"
+

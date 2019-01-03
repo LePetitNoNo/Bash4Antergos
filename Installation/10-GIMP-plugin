@@ -1,0 +1,17 @@
+#!/bin/bash
+
+yay -S --noconfirm --needed gimp-plugin-layer-via-copy-cut
+yay -S --noconfirm --needed gimp-plugin-bimp
+yay -S --noconfirm --needed gimp-plugin-beautify
+yay -S --noconfirm --needed gimp-lensfun
+yay -S --noconfirm --needed gimp-dds
+yay -S --noconfirm --needed gimp-plugin-refocusit
+yay -S --noconfirm --needed gimp-plugin-normalmap
+yay -S --noconfirm --needed gimp-plugin-resynthesizer-git
+yay -S --noconfirm --needed gimp-plugin-pandora
+yay -S --noconfirm --needed gimp-plugin-saveforweb
+<<<<<<< HEAD
+
+=======
+>>>>>>> 45d1d70b5e0b3c619c34a20008204eece29b4303
+

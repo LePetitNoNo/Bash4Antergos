@@ -1,0 +1,9 @@
+# GIMP gimp-text-tool options
+
+(foreground (color-rgb 0.977094 0.983696 0.376313))
+(palette "Historique des couleurs")
+(font "Gang of Three")
+(font-size 231.000000)
+(box-mode fixed)
+
+# end of gimp-text-tool options

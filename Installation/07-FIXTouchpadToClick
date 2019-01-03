@@ -1,0 +1,35 @@
+#!/bin/bash
+
+
+#liste les drivers
+xinput list 
+echo "################################################################"
+echo "########### Trouve le id de synpatic de touchpad   #############"
+echo "################################################################"
+echo
+echo "ID= ?"
+read ID
+
+
+#liste les actions
+xinput list-props $ID &
+echo "################################################################"
+echo "########### Trouve le id 	libinput Tapping Enabled #############"
+echo "################################################################"
+echo
+echo "IDA= ?"
+read IDA
+
+
+#enable touchpad to click
+xinput set-prop $ID $IDA 1
+echo
+echo "mettre 'xinput set-prop $ID $IDA 1' dans le démarrage auto: ~/.config/openbox/autostart"
+echo
+echo
+echo "################################################################"
+echo "###################    Clicker avec le pad    ##################"
+echo "################################################################"
+read
+
+

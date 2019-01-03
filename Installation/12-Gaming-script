@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sudo cpupower frequency-set -g performance
+nvidia-settings -a [gpu:0]/GpuPowerMizerMode=1 
+nvidia-settings -a [gpu:0]/GPUFanControlState=1 
+nvidia-settings -a [fan:0]/GPUTargetFanSpeed=65
